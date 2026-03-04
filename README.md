@@ -87,3 +87,13 @@ All results can be regenerated using the provided files.
 ## Project Scope
 
 This project focuses on structural discovery within financial data using unsupervised learning methods. It does not attempt predictive modeling or forecasting.
+## Requirements
+
+The following Python libraries are required:
+
+- pandas
+- numpy
+- scikit-learn
+- mlxtend
+- matplotlib
+- requests
