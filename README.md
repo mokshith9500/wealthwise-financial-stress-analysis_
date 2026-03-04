@@ -67,3 +67,23 @@ The final dataset contains no missing values.
 ---
 
 ## Repository Structure
+- The notebook contains complete data collection, preprocessing, modeling, and visualization code.  
+- Raw and cleaned datasets are included for reproducibility.
+
+---
+
+## Reproducibility
+
+To reproduce the analysis:
+
+1. Install required Python libraries (pandas, numpy, scikit-learn, mlxtend, matplotlib).  
+2. Insert a valid FRED API key in the notebook.  
+3. Run the notebook from top to bottom.  
+
+All results can be regenerated using the provided files.
+
+---
+
+## Project Scope
+
+This project focuses on structural discovery within financial data using unsupervised learning methods. It does not attempt predictive modeling or forecasting.
