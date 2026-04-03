@@ -1,99 +1,112 @@
-# WealthWise  
-## Financial Stress & Banking System Analysis
+# 📊 WealthWise  
+### Financial Stress & Banking System Analysis
 
 ---
 
-## Overview
+## 🔍 Overview
 
-This project analyzes U.S. banking system indicators and financial stress conditions using unsupervised machine learning techniques.
+WealthWise is a data-driven project that analyzes U.S. banking system conditions and financial stress using machine learning techniques.
 
-The objective is to examine structural relationships among macroeconomic and banking indicators and identify recurring financial regimes within the data.
+The goal of this project is to understand how financial indicators interact, identify underlying structures in economic data, and uncover recurring financial regimes that reflect different states of economic stability.
 
 ---
 
-## Methods Implemented
+## 🎯 Objectives
 
-### Principal Component Analysis (PCA)
+- Analyze relationships between macroeconomic and banking indicators  
+- Identify hidden patterns in financial systems  
+- Understand how financial stress evolves over time  
+- Compare multiple machine learning approaches  
+
+---
+
+## 🧠 Methods Implemented
+
+### 🔹 Principal Component Analysis (PCA)
 
 - Dimensionality reduction  
 - Explained variance analysis  
-- Identification of dominant components  
-
-### Clustering
-
-- K-Means Clustering  
-- Hierarchical Clustering (Dendrogram)  
-- DBSCAN  
-- Silhouette score evaluation for cluster validation  
-
-### Association Rule Mining (Apriori Algorithm)
-
-- Quantile-based discretization  
-- Support, Confidence, and Lift metrics  
-- Identification of recurring financial indicator combinations  
+- Identification of dominant economic drivers  
+- 2D and 3D visualization  
 
 ---
 
-## Data Source
+### 🔹 Clustering (Unsupervised Learning)
 
-All economic indicators were collected from the Federal Reserve Economic Data (FRED) database using the official FRED API.
+- K-Means Clustering (Silhouette-based selection of k)  
+- Hierarchical Clustering (Dendrogram analysis)  
+- DBSCAN (density-based clustering)  
 
-Indicators used include:
+📌 Purpose: Identify distinct financial regimes  
+
+---
+
+### 🔹 Association Rule Mining (Apriori)
+
+- Quantile-based discretization (Low / Medium / High)  
+- Frequent itemsets  
+- Association rules using:
+  - Support  
+  - Confidence  
+  - Lift  
+
+📌 Purpose: Discover recurring financial patterns  
+
+---
+
+### 🔹 Supervised Learning (Module 3)
+
+#### ✅ Naïve Bayes
+- Gaussian, Multinomial, Bernoulli variants  
+- Classification of financial stress levels  
+- Performance comparison using confusion matrices  
+
+#### ✅ Decision Trees
+- Multiple tree configurations (depth tuning)  
+- Gini vs Entropy comparison  
+- Tree visualization  
+- Cross-validation and overfitting analysis  
+
+#### ✅ Logistic Regression
+- Probability-based classification  
+- Sigmoid function for decision boundaries  
+- Baseline model for comparison  
+
+📌 Purpose: Classify financial stress levels (Low / Medium / High)
+
+---
+
+## 📊 Data Source
+
+All data was collected using the **Federal Reserve Economic Data (FRED) API**.
+
+Indicators include:
 
 - Consumer Delinquency Rate  
 - Business Delinquency Rate  
 - Charge-Off Rate  
 - Total Bank Credit  
 - Federal Funds Rate  
-- Treasury Yields (2-Year and 10-Year)  
+- Treasury Yields (2-Year & 10-Year)  
 - Financial Stress Index  
 - Unemployment Rate  
 
 ---
 
-## Data Preparation
+## 🧹 Data Preparation
 
-The dataset was prepared using the following steps:
+The dataset was processed using:
 
-- Time-series datasets merged on the date column  
-- Date column converted to datetime format  
+- Time-series merging on date  
+- Datetime conversion  
 - Missing values handled using forward-fill  
-- Yield spread feature engineered (10-Year Treasury minus 2-Year Treasury)  
-- StandardScaler applied prior to PCA and clustering  
-- Discretization performed for Association Rule Mining  
+- Feature engineering:
+  - Yield Spread = (10Y − 2Y Treasury)  
+- Standardization using **StandardScaler**  
+- Discretization for Association Rule Mining  
 
-The final dataset contains no missing values.
-
----
-
-## Repository Structure
-- The notebook contains complete data collection, preprocessing, modeling, and visualization code.  
-- Raw and cleaned datasets are included for reproducibility.
+✅ Final dataset contains no missing values  
 
 ---
 
-## Reproducibility
-
-To reproduce the analysis:
-
-1. Install required Python libraries (pandas, numpy, scikit-learn, mlxtend, matplotlib).  
-2. Insert a valid FRED API key in the notebook.  
-3. Run the notebook from top to bottom.  
-
-All results can be regenerated using the provided files.
-
----
-
-## Project Scope
-
-This project focuses on structural discovery within financial data using unsupervised learning methods. It does not attempt predictive modeling or forecasting.
-## Requirements
-
-The following Python libraries are required:
-
-- pandas
-- numpy
-- scikit-learn
-- mlxtend
-- matplotlib
-- requests
+## 📁 Repository Structure
