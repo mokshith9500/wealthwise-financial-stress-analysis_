@@ -1,0 +1,13 @@
+streamlit>=1.32.0
+pandas
+numpy
+scikit-learn
+joblib
+plotly
+requests
+vaderSentiment
+beautifulsoup4
+lxml
+scipy
+mlxtend
+xgboost
