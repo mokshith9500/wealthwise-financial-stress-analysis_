@@ -1,0 +1,124 @@
+{
+  "feature_names": [
+    "delinquency_consumer",
+    "chargeoff_consumer",
+    "delinquency_business",
+    "total_bank_credit",
+    "federal_funds_rate",
+    "treasury_10y",
+    "treasury_2y",
+    "unemployment_rate",
+    "yield_spread"
+  ],
+  "class_names": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "stack_classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "rf_classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "bins": [
+    "-inf",
+    -0.4044333333333334,
+    0.05206666666666661,
+    "inf"
+  ],
+  "train_size": 6830,
+  "test_size": 1708,
+  "stack_test_acc": 0.9168618266978923,
+  "rf_test_acc": 0.9168618266978923,
+  "gb_test_acc": 0.8682669789227166,
+  "stack_f1": 0.9164372670040789,
+  "feature_stats": {
+    "delinquency_consumer": {
+      "min": 1.53,
+      "max": 6.77,
+      "mean": 3.584954612005857,
+      "std": 1.1610434014477393,
+      "p5": 1.99,
+      "p95": 5.1
+    },
+    "chargeoff_consumer": {
+      "min": 1.63,
+      "max": 10.54,
+      "mean": 4.462746705710102,
+      "std": 1.6881844249888838,
+      "p5": 2.51,
+      "p95": 7.91
+    },
+    "delinquency_business": {
+      "min": 1.52,
+      "max": 4.85,
+      "mean": 2.936371888726208,
+      "std": 0.7321635200094272,
+      "p5": 1.82,
+      "p95": 4.25
+    },
+    "total_bank_credit": {
+      "min": 2997.1323,
+      "max": 19461.2665,
+      "mean": 9367.82669168375,
+      "std": 4706.5850145655695,
+      "p5": 3333.3556,
+      "p95": 17780.8716
+    },
+    "federal_funds_rate": {
+      "min": 0.05,
+      "max": 6.54,
+      "mean": 2.6308477306002924,
+      "std": 2.21985185205642,
+      "p5": 0.08,
+      "p95": 5.8
+    },
+    "treasury_10y": {
+      "min": 0.55,
+      "max": 8.05,
+      "mean": 3.885267935578331,
+      "std": 1.6625157169938012,
+      "p5": 1.52,
+      "p95": 6.74
+    },
+    "treasury_2y": {
+      "min": 0.11,
+      "max": 7.74,
+      "mean": 2.9389721815519767,
+      "std": 2.110146043568748,
+      "p5": 0.23,
+      "p95": 6.26
+    },
+    "unemployment_rate": {
+      "min": 3.4,
+      "max": 14.8,
+      "mean": 5.529311859443631,
+      "std": 1.7688412865789778,
+      "p5": 3.6,
+      "p95": 9.4
+    },
+    "yield_spread": {
+      "min": -1.0800000000000005,
+      "max": 2.91,
+      "mean": 0.9462957540263545,
+      "std": 0.9145658078377114,
+      "p5": -0.3899999999999997,
+      "p95": 2.53
+    }
+  },
+  "fred_series": {
+    "delinquency_consumer": "DRCCLACBS",
+    "chargeoff_consumer": "CORCCACBS",
+    "delinquency_business": "DRCLACBS",
+    "total_bank_credit": "TOTBKCR",
+    "federal_funds_rate": "FEDFUNDS",
+    "treasury_10y": "DGS10",
+    "treasury_2y": "DGS2",
+    "unemployment_rate": "UNRATE"
+  }
+}
